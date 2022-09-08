@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(245, 101, 101);
+}
+body {
+    background: transparent url(../images/loginbj1.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+.login-box {
+    width: 500px;
+    height: 345px;
+    margin: 185px auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.login-box h4 {
+    font-size: 30px;
+    color: #fff;
+}
+.login-box section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+form section::before {
+    position: absolute;
+    left: 120px;
+    top: 18px;
+    content: "\e971";
+    font-family: 'icomoon';
+    font-size: 30px;
+}
+form section::after {
+    content: "\e900";
+    position: absolute;
+    left: 120px;
+    top: 83px;
+    font-family: 'icomoon';
+    font-size: 30px;
+}
+form {
+    margin-top: 50px;
+}
+section input {
+    width: 250px;
+    height: 30px;
+    border: 0;
+    border-bottom: 2px solid white;
+   background: #ffffff00;
+   font-size: 18px;
+   padding-left: 30px;
+   outline: none;
+   color: #fff;
+}
+section input::placeholder {
+    color: white;
+}
+section .submit {
+    cursor: pointer;
+    border: 1px solid black;
+    width: 150px;
+    padding: 0;
+    background:  linear-gradient(to right, #36d1dc, #5b86e5);
+    border-radius: 15px;
+    transition: all 5s;
+}
+section .button:hover {
+    background:  linear-gradient(to right, #5b86e5 ,#36d1dc);
+}

@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #ccc;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: bisque;
+}
+img {
+    vertical-align: middle;
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+    /* background-color: pink; */
+}
+/* 清除浮动 */
+.clearfix::after {
+    content: "";
+    clear: both;
+    overflow: hidden;
+    height: 0;
+    display: block;
+}
+.fix_head {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    background-color: white;
+    /* border-bottom: 2px solid white; */
+    z-index: 99999999999;
+}
+h4 {
+    float: left;
+    width: 80px;
+    margin-left: 10%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.fix_head a {
+    width: 100%;
+}
+.fix_head a img {
+    width: 100%;
+}
+.fix_head ul {
+    position: absolute;
+    top: 0;
+    right: 150px;
+    width: 700px;
+    line-height: 54px;
+}
+.fix_head ul a {
+    display: inline-block;
+    border-right: 1px solid #b2afaf;
+
+}
+.fix_head ul li{
+    float: left;
+    width: 17%;
+    text-align: center;
+}
+.fix_head ul li:nth-child(5) a{
+    border-right: 0;
+}
+.content {
+    margin-top: 30px;
+}
+.content_head {
+    width: 1499px;
+    height: 1040px;
+    margin: 0 auto;
+    background: url(../images/dabeij.jpg) no-repeat  center ;
+}
+.content_head img {
+    width: 100%;
+    /* margin: 0 10px; */
+}
+.bj_box {
+    width: 100%;
+    height: 1040px;
+    background-color: rgba(220,220,220,.3);
+    visibility: hidden;
+    transition: all .2s;
+}
+.bj_box img {
+    transform: translateY(75%);
+}
+.content_head:hover .bj_box{
+    visibility: visible;
+}
+.content h3 {
+    text-align: center;
+    font-size: 30px;
+    color: #ccc;
+    font-weight: 400;
+    background-color: white;
+}
+.video_box {
+    margin-top: 370px;
+}
+.content p {
+    text-align: center;
+    font-size: 18px;
+    color: #ccc;
+    background-color: white;
+}
+.content article {
+    float: left;
+    width: 50%;
+    height: 350px;
+    overflow: hidden;
+    background-color: green;
+    transition: all 1s inherit;
+}
+.content article img:nth-child(1) {
+    width: 100%;
+}
+.content article img:nth-child(1) {
+    width: 100%;
+    height: 350px;
+}
+.content article:hover img{
+    transform: scale(1.1);
+}
+.content .video video{
+    width: 100%;
+}
+
+/* 页脚 */
+.footer_begin {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+}
+.footer_begin .footer_begin_body {
+    height: 300px;
+    /* background-color: red; */
+}
+.footer_begin .footer_begin_body article {
+    float: left;
+    margin-top: 50px;
+    /* border-right: 2px solid rgb(139, 136, 136); */
+}
+.footer_begin .footer_begin_body article dl {
+    float: left;
+    margin: 0 50px ;
+    
+}
+.footer_begin .footer_begin_body article dt {
+    margin-bottom: 30px;
+}
+.footer_begin .footer_begin_body article dl dd {
+    margin-bottom: 10px;
+}
+.footer_lianxi {
+    display: inline-block;
+    width: 404px;
+    height: 174px;
+    margin-top: 50px;
+    /* background-color: pink; */
+}
+.footer_lianxi section {
+    float: left;
+}
+.footer_lianxi img {
+    width: 174px;
+}
+.footer_lianxi p {
+    text-align: center;
+    margin-top: 80px;
+}
+.xian {
+    float: left;
+    margin-top: 50px;
+    margin-right: 10px;
+    height: 174px;
+    border-left: 2px solid black;
+}
+.footer_begin .footer_begin_body article dl dd a:hover {
+    background-color: white;
+    border-bottom: 1px solid rgba(219, 211, 59, 0.834);
+}
+.content_box ul {
+
+}
+.content_box li {
+    float: left;
+    width: 395px;
+    height: 198px;
+   /* 子绝父相 */
+   position: relative;
+    margin: 0 5px 15px 0;
+}
+.content_box li img {
+    width: 100%;
+    height: 100%;
+    transition: all 2s inherit;
+}
+.content_box li img:hover {
+    transform: translateY(-10px);
+    box-shadow: 3px 3px 20px;
+
+}
+.content_box h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.content_box li::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    content: "这是雨后的梧州学院";
+    background-color: #b2afaf;
+    /* isibility: hidden;v */
+
+}
+
